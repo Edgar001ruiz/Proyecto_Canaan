@@ -37,7 +37,7 @@ require_once(__DIR__ . '/../config/auth.php');
           <a href="eventos/gestionar_evento.php" class="btn btn-outline-primary w-100">📅 Gestionar eventos</a>
         </div>
         <div class="col-md-4">
-          <a href="#" class="btn btn-outline-secondary w-100 disabled">👥 Gestionar pastores (próximamente)</a>
+          <a href="pastores/gestionar_pastores.php" class="btn btn-outline-primary w-100">👥 Gestionar pastores</a>
         </div>
         <div class="col-md-4">
           <a href="#" class="btn btn-outline-secondary w-100 disabled">⛪ Gestionar ministerios (próximamente)</a>
