@@ -47,7 +47,7 @@ require_once(__DIR__ . '/../config/auth.php');
 
     <!-- Cerrar sesión -->
     <div class="mt-4">
-      <a href="../config/logout.php" class="btn btn-outline-danger">Cerrar sesión</a>
+      <a href="logout.php" class="btn btn-outline-danger">Cerrar sesión</a>
     </div>
   </div>
 </body>

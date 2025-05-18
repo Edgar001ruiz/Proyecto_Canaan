@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 require_once(__DIR__ . '/../config/db.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -8,23 +7,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
     try {
-        $stmt = $pdo->prepare("SELECT * FROM administradores WHERE username = ?");
+        // Comparación sensible a mayúsculas con BINARY
+        $stmt = $pdo->prepare("SELECT * FROM administradores WHERE BINARY username = ?");
         $stmt->execute([$username]);
         $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($admin && password_verify($password, $admin['password'])) {
-            // Guardar datos en sesión
             $_SESSION['admin_id'] = $admin['id'];
             $_SESSION['admin_username'] = $admin['username'];
-            $_SESSION['admin_role'] = $admin['role']; // <<--- ESTA LÍNEA ES IMPORTANTE
+            $_SESSION['admin_role'] = $admin['role'];
 
-            header('Location: ../admin/dashboard.php');
+            header('Location: dashboard.php');
             exit();
         } else {
-            echo "Credenciales incorrectas.";
+            header('Location: ../login.html?error=1');
+            exit();
         }
     } catch (PDOException $e) {
-        echo "Error al intentar iniciar sesión: " . $e->getMessage();
+        header('Location: ../login.html?error=1');
+        exit();
     }
 }
 ?>
