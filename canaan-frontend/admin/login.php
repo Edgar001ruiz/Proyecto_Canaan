@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header('Location: dashboard.php');
             exit();
         } else {
-            header('Location: ../login.html?error=1');
+            header('Location: ../pages/login.php?error=1');
             exit();
         }
     } catch (PDOException $e) {
-        header('Location: ../login.html?error=1');
+        header('Location: ../pages/login.php?error=1');
         exit();
     }
 }

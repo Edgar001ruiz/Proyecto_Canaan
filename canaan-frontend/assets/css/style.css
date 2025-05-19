@@ -11,4 +11,7 @@ body {
     height: 100%;
   }
   
-  
+  .links:link{
+    text-decoration: none;
+    color: #f8f9fa;
+  }
