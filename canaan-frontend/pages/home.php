@@ -68,35 +68,4 @@
   </div>
 </section>
 
-<!-- Carrusel de ministerios o banderas -->
-<section class="py-5" style="background-color: #00263e;">
-  <div class="container text-white text-center">
-    <h2 class="mb-4 text-warning">Nuestro impacto en las naciones</h2>
-    <div id="flagsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner rounded shadow">
-        <div class="carousel-item active">
-          <img src="../assets/img/canaan-mas.jpg" class="d-block w-100" alt="Bandera 1" style="max-height: 400px; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <a href="#" class="btn btn-warning mt-2">Leer más</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/img/misiones.jpg" class="d-block w-100" alt="Bandera 2" style="max-height: 400px; object-fit: cover;">
-          <div class="carousel-caption d-none d-md-block">
-            <a href="#" class="btn btn-warning mt-2">Leer más</a>
-          </div>
-        </div>
-        <!-- Agregar más ministerios -->
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#flagsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#flagsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </div>
-</section>
-
 <?php include('../components/footer.php'); ?>

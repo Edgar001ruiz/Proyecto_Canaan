@@ -40,7 +40,7 @@ require_once(__DIR__ . '/../config/auth.php');
           <a href="pastores/gestionar_pastores.php" class="btn btn-outline-primary w-100">👥 Gestionar pastores</a>
         </div>
         <div class="col-md-4">
-          <a href="#" class="btn btn-outline-secondary w-100 disabled">⛪ Gestionar ministerios (próximamente)</a>
+          <a href="ministerios/gestionar_ministerio.php" class="btn btn-outline-primary w-100">⛪ Gestionar ministerios</a>
         </div>
       </div>
     </div>

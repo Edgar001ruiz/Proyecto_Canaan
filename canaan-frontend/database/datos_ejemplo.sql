@@ -1,7 +1,7 @@
 -- Datos de ejemplo para Canaán Central
 
 
--- Datos de ejemplo para tabla "pastores"
+-- Datos de ejemplo para tabla "Administradores"
 INSERT INTO `administradores` (`username`, `password`, `nombre`, `rol`, `role`) VALUES
 ('admin1', '$2y$10$WH/5lutjaf.Oj8rGRW0y6.m22rzxWL7hOO4cb.JiSwxDU9J0FBTua', 'Administrador Principal', 'superadmin', 'admin');
 
@@ -17,3 +17,5 @@ INSERT INTO `pastores` (`id`, `nombre_completo`, `fecha_nacimiento`, `tiempo_pas
 -- Ajustar el valor AUTO_INCREMENT para continuar con el ID 4 en adelante
 ALTER TABLE `pastores`
   AUTO_INCREMENT = 4;
+
+  

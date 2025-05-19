@@ -26,10 +26,16 @@ try {
 </head>
 <body class="bg-light">
 <div class="container py-5">
+
   <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2>Gestión de Pastores</h2>
+  <h2> 👥 Gestión de Pastores</h2>
+  <div>
+    <a href="../dashboard.php" class="btn btn-secondary me-2">← Volver al panel</a>
     <a href="agregar_pastor.php" class="btn btn-success">+ Agregar Pastor</a>
   </div>
+</div>
+
+
 
   <?php if (isset($_GET['success'])): ?>
     <div class="alert alert-success">¡Pastor agregado correctamente!</div>
