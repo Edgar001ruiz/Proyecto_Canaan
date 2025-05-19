@@ -18,4 +18,9 @@ INSERT INTO `pastores` (`id`, `nombre_completo`, `fecha_nacimiento`, `tiempo_pas
 ALTER TABLE `pastores`
   AUTO_INCREMENT = 4;
 
+  -- Datos de ejemplo para tabla "ministerios"
+INSERT INTO `ministerios` (`nombre`, `descripcion`, `imagen_url`) VALUES
+('Alabanzas', 'Ministerio de adoración y alabanza durante los servicios.', '682bb36857b94_alabanza.jpg'),
+('Cuantico', 'Ministerio enfocado en tecnología, multimedia y sonido.', '682bb37f76e82_cuanti.png');
+
   

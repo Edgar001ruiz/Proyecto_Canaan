@@ -1,5 +1,6 @@
 -- Crear tablas para el proyecto Canaán Central (estructura)
 
+-- Tabla: `administradores`
 CREATE TABLE `administradores` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL UNIQUE,
@@ -12,6 +13,7 @@ CREATE TABLE `administradores` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Tabla: `eventos`
 CREATE TABLE `eventos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(255) NOT NULL,
@@ -24,16 +26,8 @@ CREATE TABLE `eventos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) NOT NULL UNIQUE,
-  `password` varchar(255) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `role` enum('admin','user') NOT NULL DEFAULT 'user',
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- Tabla: `pastores`
 CREATE TABLE IF NOT EXISTS `pastores` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `nombre_completo` VARCHAR(255) NOT NULL,
@@ -42,5 +36,17 @@ CREATE TABLE IF NOT EXISTS `pastores` (
   `descripcion` TEXT NOT NULL,
   `imagen` VARCHAR(255) NOT NULL,
   `creado_en` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+-- Tabla: `ministerios`
+DROP TABLE IF EXISTS `ministerios`;
+CREATE TABLE `ministerios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  `descripcion` text NOT NULL,
+  `creado_en` timestamp NOT NULL DEFAULT current_timestamp(),
+  `imagen_url` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
