@@ -18,7 +18,7 @@
                 <div class="card shadow">
                     <div class="card-body p-5">
                         <div class="text-center mb-4">
-                            <img src="../assets/img/logo-canaan.png" alt="Logo Iglesia Canaan" class="img-fluid mb-4" style="max-width: 200px;">
+                            <img src="../assets/img/logo canaan_angeles.png" alt="Logo Iglesia Canaan" class="img-fluid mb-4" style="max-width: 200px;">
                             <h2 class="text-primary mb-3">Iniciar Sesión</h2>
                         </div>
                         
