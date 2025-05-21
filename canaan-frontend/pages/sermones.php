@@ -17,14 +17,17 @@
           En este sermón, el pastor nos recuerda que Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones. 
           No importa cuán fuerte sea la tormenta, ¡con Dios salimos adelante!
         </p>
-        <a href="#" class="btn btn-warning">Escuchar Audio</a>
-        <a href="#" class="btn btn-outline-dark ms-2">Descargar Bosquejo</a>
+        <a href="https://youtu.be/3_3XyowJdKE?si=3FA6KrKokribA5Rc"  class="btn btn-warning">Escuchar Audio</a>
+        <a href="../uploads/archivos/bosquejo.pdf" download class="btn btn-outline-dark ms-2">Descargar Bosquejo</a>
       </div>
       <div class="col-md-6">
-        <div class="ratio ratio-16x9">
-          <iframe src="https://youtu.be/3_3XyowJdKE?si=3FA6KrKokribA5Rc" title="Sermón del Día" allowfullscreen></iframe>
-        </div>
-      </div>
+  <div class="ratio ratio-16x9">
+    <img src="https://www.eluniverso.com/resizer/RIlqhmK7FIzpYfafTufWwNzaQjg=/1011x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/CFHDGJ35DNBFPJFTTVHFHUMSFE.jpg" 
+         alt="Sermón del Día" 
+         class="img-fluid rounded">
+  </div>
+</div>
+
     </div>
   </div>
 </section>
